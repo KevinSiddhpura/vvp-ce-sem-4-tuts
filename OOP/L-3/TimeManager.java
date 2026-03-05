@@ -43,7 +43,7 @@ public class TimeManager {
         Time result = new Time();
         result.addTime(t1, t2);
 
-        System.out.println("=: Time 1: ");
+        System.out.print("\n=: Time 1: ");
         t1.displayTime();
 
         System.out.print("=: Time 2: ");
