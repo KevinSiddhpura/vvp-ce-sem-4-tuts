@@ -24,6 +24,7 @@ class Manager extends Employee {
         this.teamSize = teamSize;
     }
 
+    @Override
     void displayDetails() {
         System.out.println("[]: Manager Details");
         System.out.println("=: Name: " + name);
