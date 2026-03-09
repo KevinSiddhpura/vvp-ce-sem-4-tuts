@@ -1,3 +1,89 @@
 # clg-4th
-V.V.P Engg College | C.E. | 4th - Sem
-..
+
+**V.V.P Engineering College | Computer Engineering | 4th Semester**
+
+Lab practicals for **Object-Oriented Programming (OOP) with Java** and **Operating Systems (OS) Shell Scripting**.
+
+---
+
+## Object-Oriented Programming (Java)
+
+### L-1 — Basic Programs
+
+| File | Description |
+|------|-------------|
+| [CharacterCheck.java](OOP/L-1/CharacterCheck.java) | Reads a character and determines whether it is a vowel or a consonant. |
+| [NumIncre.java](OOP/L-1/NumIncre.java) | Accepts a 5-digit number and increments each digit by 1 (9 wraps to 0). |
+| [PrimeCheck.java](OOP/L-1/PrimeCheck.java) | Reads an integer and checks whether it is a prime number using trial division. |
+| [TriangleArea.java](OOP/L-1/TriangleArea.java) | Takes three side lengths, validates the triangle, and computes area using Heron's formula. |
+
+### L-2 — String Validation
+
+| File | Description |
+|------|-------------|
+| [AnagramCheck.java](OOP/L-2/AnagramCheck.java) | Strips spaces, sorts characters of two strings, and checks if they are anagrams. |
+| [EmailChecker.java](OOP/L-2/EmailChecker.java) | Validates an email address against a regex pattern and reports valid or invalid. |
+| [GtuEnrollCheck.java](OOP/L-2/GtuEnrollCheck.java) | Verifies a GTU enrollment number is exactly 12 characters long. |
+
+### L-3 — Classes and Objects
+
+| File | Description |
+|------|-------------|
+| [EmployeeManager.java](OOP/L-3/EmployeeManager.java) | Defines an `Employee` class with name and salary; reads and displays employee data. |
+| [StudentManager.java](OOP/L-3/StudentManager.java) | Collects marks for 5 students, computes percentages, and sorts them in descending order using bubble sort. |
+| [TimeManager.java](OOP/L-3/TimeManager.java) | Defines a `Time` class; reads two time values and adds them with proper minute-to-hour carry. |
+
+### L-4 — Inheritance and Polymorphism
+
+| File | Description |
+|------|-------------|
+| [EmployeeManager.java](OOP/L-4/EmployeeManager.java) | Demonstrates single inheritance — `Manager` extends `Employee` and overrides `displayDetails()`. |
+| [PaymentManager.java](OOP/L-4/PaymentManager.java) | Demonstrates runtime polymorphism with `CreditCardPayment` and `UPIPayment` subclasses of `Payment`. |
+| [UniversityManager.java](OOP/L-4/UniversityManager.java) | Illustrates static and instance initializer blocks using a `University` class with a shared student counter. |
+| [VolumeCalc.java](OOP/L-4/VolumeCalc.java) | Demonstrates method overloading with three `calculateVolume()` variants for sphere, cube, and cuboid. |
+
+### L-5 — Interfaces and Abstract Classes
+
+| File | Description |
+|------|-------------|
+| [InterestCalc.java](OOP/L-5/InterestCalc.java) | Defines an `Interest` interface implemented by `SimpleInterest` and `CompoundInterest` classes. |
+| [Shapes.java](OOP/L-5/Shapes.java) | Abstract `Shape` class with `Triangle`, `Rectangle`, and `Circle` subclasses that compute area. |
+
+---
+
+## Operating Systems (Shell Scripting)
+
+### L-2 — Basic Arithmetic
+
+| File | Description |
+|------|-------------|
+| [2.sh](OS/L-2/2.sh) | Computes the sum of all natural numbers up to N and N! (factorial) using a single `for` loop. |
+| [3.sh](OS/L-2/3.sh) | Reads a number and checks primality by testing divisibility from 2 up to N. |
+
+### L-3 — String and Digit Operations
+
+| File | Description |
+|------|-------------|
+| [1.sh](OS/L-3/1.sh) | Reverses a string using `rev` and checks whether it is a palindrome. |
+| [2.sh](OS/L-3/2.sh) | Calculates the sum of digits of a number by repeatedly extracting the last digit via modulo. |
+| [3.sh](OS/L-3/3.sh) | Accepts numbers as command-line arguments and sorts them in descending order using bubble sort. |
+
+### L-7 — Command-Line Argument Processing
+
+| File | Description |
+|------|-------------|
+| [1.sh](OS/L-7/1.sh) | Accepts multiple numbers as arguments and computes their minimum, maximum, and average. |
+
+### L-8 — File and Directory Listing
+
+| File | Description |
+|------|-------------|
+| [2.sh](OS/L-8/2.sh) | Lists files in the current directory sorted by size in descending order. |
+| [3.sh](OS/L-8/3.sh) | Lists files sorted by size and counts the total number of regular files in the directory. |
+
+### L-10 — File Manipulation
+
+| File | Description |
+|------|-------------|
+| [1.sh](OS/L-10/1.sh) | Swaps the case (lower↔upper) of every letter in a file's content using `tr`. |
+| [2.sh](OS/L-10/2.sh) | Finds all `.txt` files in the current directory and renames them to use the `.doc` extension. |
