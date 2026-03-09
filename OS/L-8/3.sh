@@ -1,9 +1,11 @@
 #!/bin/bash
 
 echo "[]: Files in current directory:"
-ls -lh
+ls -lh | sort -hr -k 5
+
+count=$(ls -l | grep "^-" | wc -l)
 
 echo
-echo "[]: Total files: $(ls -lh | grep "^-" | wc -l)"
+echo "[]: Total files: $count"
 
 exit 0
