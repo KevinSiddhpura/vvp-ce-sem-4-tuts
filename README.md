@@ -2,7 +2,33 @@
 
 **V.V.P Engineering College | Computer Engineering | 4th Semester**
 
-Lab practicals for **Object-Oriented Programming (OOP) with Java** and **Operating Systems (OS) Shell Scripting**.
+Lab practicals for **Analysis and Design of Algorithms (ADA)**, **Object-Oriented Programming (OOP) with Java**, and **Operating Systems (OS) Shell Scripting**.
+
+---
+
+## Analysis and Design of Algorithms (C)
+
+### L-1 — Basic Sorting Algorithms
+
+| File | Description |
+|------|-------------|
+| [bubbleSort.c](ADA/L-1/bubbleSort.c) | Sorts an array using bubble sort by repeatedly swapping adjacent elements if they are in wrong order. |
+| [insertionSort.c](ADA/L-1/insertionSort.c) | Sorts an array using insertion sort by building a sorted portion one element at a time. |
+| [selectionSort.c](ADA/L-1/selectionSort.c) | Sorts an array using selection sort by repeatedly finding the minimum element and placing it at the beginning. |
+
+### L-2 — Searching Algorithms
+
+| File | Description |
+|------|-------------|
+| [binarySearch.c](ADA/L-2/binarySearch.c) | Performs binary search on a sorted array by repeatedly dividing the search interval in half. |
+| [linearSearch.c](ADA/L-2/linearSearch.c) | Performs linear search by sequentially checking each element until the target is found. |
+
+### L-3 — Advanced Sorting Algorithms
+
+| File | Description |
+|------|-------------|
+| [mergeSort.c](ADA/L-3/mergeSort.c) | Sorts an array using merge sort with divide-and-conquer approach by recursively splitting and merging. |
+| [quickSort.c](ADA/L-3/quickSort.c) | Sorts an array using quick sort by partitioning around a pivot and recursively sorting subarrays. |
 
 ---
 
