@@ -30,6 +30,18 @@ Lab practicals for **Analysis and Design of Algorithms (ADA)**, **Object-Oriente
 | [mergeSort.c](ADA/L-3/mergeSort.c) | Sorts an array using merge sort with divide-and-conquer approach by recursively splitting and merging. |
 | [quickSort.c](ADA/L-3/quickSort.c) | Sorts an array using quick sort by partitioning around a pivot and recursively sorting subarrays. |
 
+### L-8 — Dynamic Programming - Matrix Chain Multiplication
+
+| File | Description |
+|------|-------------|
+| [matrixChain.c](ADA/L-8/matrixChain.c) | Finds the minimum number of scalar multiplications needed to multiply a chain of matrices using dynamic programming. |
+
+### L-9 — Dynamic Programming - Longest Common Subsequence
+
+| File | Description |
+|------|-------------|
+| [lcs.c](ADA/L-9/lcs.c) | Computes the length of the longest common subsequence between two strings using dynamic programming. |
+
 ---
 
 ## Object-Oriented Programming (Java)
