@@ -31,27 +31,21 @@ public class PaymentManager {
         System.out.println("1]. Credit Card");
         System.out.println("2]. UPI");
         System.out.print("\n-- Enter choice (1/2): ");
+
         int choice = sc.nextInt();
         
-        Payment payment;
+        if(choice != 1 || choice != 2) {
+            System.out.println("\n[]: Invalid Choice!");
+        } else {
+            Payment payment;
 
-        switch(choice) {
-            case 1: {
+            if(choice == 1) {
                 payment = new CreditCardPayment();
-                payment.processPayment(amount);
-                break;
-            }
-
-            case 2: {
+            } else {
                 payment = new UPIPayment();
-                payment.processPayment(amount);
-                break;
             }
 
-            default: {
-                System.out.println("[]: Invalid choice!");
-                break;
-            }
+            payment.processPayment(amount);
         }
 
         sc.close();
