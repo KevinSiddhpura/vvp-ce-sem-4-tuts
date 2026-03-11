@@ -34,17 +34,26 @@ public class PaymentManager {
         int choice = sc.nextInt();
         
         Payment payment;
-        
-        if (choice == 1) {
-            payment = new CreditCardPayment();
-            payment.processPayment(amount);
-        } else if (choice == 2) {
-            payment = new UPIPayment();
-            payment.processPayment(amount);
-        } else {
-            System.out.println("[]: Invalid choice!");
+
+        switch(choice) {
+            case 1: {
+                payment = new CreditCardPayment();
+                payment.processPayment(amount);
+                break;
+            }
+
+            case 2: {
+                payment = new UPIPayment();
+                payment.processPayment(amount);
+                break;
+            }
+
+            default: {
+                System.out.println("[]: Invalid choice!");
+                break;
+            }
         }
-        
+
         sc.close();
     }
 }
