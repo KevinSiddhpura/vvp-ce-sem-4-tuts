@@ -42,6 +42,12 @@ Lab practicals for **Analysis and Design of Algorithms (ADA)**, **Object-Oriente
 |------|-------------|
 | [lcs.c](ADA/L-9/lcs.c) | Computes the length of the longest common subsequence between two strings using dynamic programming. |
 
+### Reference Material
+
+| File | Description |
+|------|-------------|
+| [ADA.pdf](ADA/ADA.pdf) | Lab/reference document for the ADA course. |
+
 ---
 
 ## Object-Oriented Programming (Java)
@@ -87,6 +93,19 @@ Lab practicals for **Analysis and Design of Algorithms (ADA)**, **Object-Oriente
 | [InterestCalc.java](OOP/L-5/InterestCalc.java) | Defines an `Interest` interface implemented by `SimpleInterest` and `CompoundInterest` classes. |
 | [Shapes.java](OOP/L-5/Shapes.java) | Abstract `Shape` class with `Triangle`, `Rectangle`, and `Circle` subclasses that compute area. |
 
+### Reference Material
+
+| File | Description |
+|------|-------------|
+| [OS.pdf](OOP/OS.pdf) | Lab/reference document provided in the OOP folder. |
+
+### Tut — Practice Programs
+
+| File | Description |
+|------|-------------|
+| [B.java](OOP/Tut/B.java) | Demonstrates single inheritance where class `B` extends class `A` and calls both inherited and own methods. |
+| [Student.java](OOP/Tut/Student.java) | Demonstrates constructor overloading using default and parameterized constructors. |
+
 ---
 
 ## Operating Systems (Shell Scripting)
@@ -105,6 +124,13 @@ Lab practicals for **Analysis and Design of Algorithms (ADA)**, **Object-Oriente
 | [1.sh](OS/L-3/1.sh) | Reverses a string using `rev` and checks whether it is a palindrome. |
 | [2.sh](OS/L-3/2.sh) | Calculates the sum of digits of a number by repeatedly extracting the last digit via modulo. |
 | [3.sh](OS/L-3/3.sh) | Accepts numbers as command-line arguments and sorts them in descending order using bubble sort. |
+
+### L-4 — Process Creation (C)
+
+| File | Description |
+|------|-------------|
+| [1.c](OS/L-4/1.c) | Creates multiple child processes using `fork()` and prints child and parent process IDs. |
+| [2.c](OS/L-4/2.c) | Creates child processes using `fork()`, prints process IDs, and performs child-specific work (square calculation). |
 
 ### L-7 — Command-Line Argument Processing
 
@@ -125,3 +151,12 @@ Lab practicals for **Analysis and Design of Algorithms (ADA)**, **Object-Oriente
 |------|-------------|
 | [1.sh](OS/L-10/1.sh) | Swaps the case (lower↔upper) of every letter in a file's content using `tr`. |
 | [2.sh](OS/L-10/2.sh) | Finds all `.txt` files in the current directory and renames them to use the `.doc` extension. |
+| [3.sh](OS/L-10/3.sh) | Creates `f1.txt` and `f2.txt` if missing, compares their content, and optionally deletes both files. |
+| [f1.txt](OS/L-10/f1.txt) | Sample text file used by `3.sh` for file comparison. |
+| [f2.txt](OS/L-10/f2.txt) | Sample text file used by `3.sh` for file comparison. |
+
+### Reference Material
+
+| File | Description |
+|------|-------------|
+| [OS.pdf](OS/OS.pdf) | Lab/reference document for the OS course. |

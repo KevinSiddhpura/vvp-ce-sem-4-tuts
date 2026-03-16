@@ -1,15 +1,11 @@
 #!/bin/bash
 
-files=$(ls | grep ".txt")
-
-if [ -z $files ]; then
-    echo "[]: No files found with '.txt' extension"
-    exit 1
-fi
+files=$(ls *.txt)
 
 for file in $files; do
-    mv "$file" "${file%.txt}.doc"
-    echo "[]: Updated '$file' to '${file%.txt}.doc'"
+    new_name="${file%.txt}.doc"
+    mv "$file" "$new_name"
+    echo "[]: Updated '$file' to '$new_name'"
 done
 
 exit 0
