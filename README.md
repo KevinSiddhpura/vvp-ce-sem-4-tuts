@@ -97,7 +97,7 @@ Lab practicals for **Analysis and Design of Algorithms (ADA)**, **Object-Oriente
 
 | File | Description |
 |------|-------------|
-| [OS.pdf](OOP/OS.pdf) | Lab/reference document provided in the OOP folder. |
+| [OOP.pdf](OOP/OOP.pdf) | Lab/reference document provided in the OOP folder. |
 
 ### Tut — Practice Programs
 
