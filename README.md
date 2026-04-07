@@ -30,6 +30,18 @@ Lab practicals for **Analysis and Design of Algorithms (ADA)**, **Object-Oriente
 | [mergeSort.c](ADA/L-3/mergeSort.c) | Sorts an array using merge sort with divide-and-conquer approach by recursively splitting and merging. |
 | [quickSort.c](ADA/L-3/quickSort.c) | Sorts an array using quick sort by partitioning around a pivot and recursively sorting subarrays. |
 
+### L-4 — Greedy Method and Knapsack
+
+| File | Description |
+|------|-------------|
+| [activitySelection.c](ADA/L-4/activitySelection.c) | Solves the activity selection problem using greedy strategy with parallel arrays sorted by finish time. |
+| [activitySelection-struct.c](ADA/L-4/activitySelection-struct.c) | Solves the activity selection problem using a `struct Activity` array and greedy selection by earliest finish. |
+| [job.c](ADA/L-4/job.c) | Implements job sequencing with deadlines to maximize profit using greedy sorting by profit and slot assignment. |
+| [job-struct.c](ADA/L-4/job-struct.c) | Implements job sequencing with deadlines using `struct Job`, greedy profit ordering, and time-slot allocation. |
+| [makeChange.c](ADA/L-4/makeChange.c) | Finds minimum coins for a given amount using greedy denomination selection (10, 5, 2, 1). |
+| [zeroOne.c](ADA/L-4/zeroOne.c) | Solves 0/1 knapsack with dynamic programming using separate item, weight, and profit arrays. |
+| [zeroOne-struct.c](ADA/L-4/zeroOne-struct.c) | Solves 0/1 knapsack with dynamic programming using an array of `struct Item`. |
+
 ### L-8 — Dynamic Programming - Matrix Chain Multiplication
 
 | File | Description |
@@ -145,6 +157,12 @@ Lab practicals for **Analysis and Design of Algorithms (ADA)**, **Object-Oriente
 | [2.sh](OS/L-8/2.sh) | Lists files in the current directory sorted by size in descending order. |
 | [3.sh](OS/L-8/3.sh) | Lists files sorted by size and counts the total number of regular files in the directory. |
 
+### L-9 — Directory Handling (C)
+
+| File | Description |
+|------|-------------|
+| [1.c](OS/L-9/1.c) | Opens the current directory using `opendir()` and prints all non-hidden entries using `readdir()`. |
+
 ### L-10 — File Manipulation
 
 | File | Description |
@@ -152,8 +170,6 @@ Lab practicals for **Analysis and Design of Algorithms (ADA)**, **Object-Oriente
 | [1.sh](OS/L-10/1.sh) | Swaps the case (lower↔upper) of every letter in a file's content using `tr`. |
 | [2.sh](OS/L-10/2.sh) | Finds all `.txt` files in the current directory and renames them to use the `.doc` extension. |
 | [3.sh](OS/L-10/3.sh) | Creates `f1.txt` and `f2.txt` if missing, compares their content, and optionally deletes both files. |
-| [f1.txt](OS/L-10/f1.txt) | Sample text file used by `3.sh` for file comparison. |
-| [f2.txt](OS/L-10/f2.txt) | Sample text file used by `3.sh` for file comparison. |
 
 ### Reference Material
 
