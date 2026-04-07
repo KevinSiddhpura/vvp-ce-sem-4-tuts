@@ -38,7 +38,10 @@ Lab practicals for **Analysis and Design of Algorithms (ADA)**, **Object-Oriente
 | [activitySelection-struct.c](ADA/L-4/activitySelection-struct.c) | Solves the activity selection problem using a `struct Activity` array and greedy selection by earliest finish. |
 | [job.c](ADA/L-4/job.c) | Implements job sequencing with deadlines to maximize profit using greedy sorting by profit and slot assignment. |
 | [job-struct.c](ADA/L-4/job-struct.c) | Implements job sequencing with deadlines using `struct Job`, greedy profit ordering, and time-slot allocation. |
+| [kruskal-list.c](ADA/L-4/kruskal-list.c) | Builds an MST using Kruskal's algorithm from an edge-list representation with `struct Edge` and cycle checks. |
+| [kruskal-matrix.c](ADA/L-4/kruskal-matrix.c) | Converts an adjacency matrix to an edge list, then applies Kruskal's algorithm to print MST edges and total cost. |
 | [makeChange.c](ADA/L-4/makeChange.c) | Finds minimum coins for a given amount using greedy denomination selection (10, 5, 2, 1). |
+| [prims.c](ADA/L-4/prims.c) | Builds an MST using Prim's algorithm with key/visited arrays and prints selected edges with total cost. |
 | [zeroOne.c](ADA/L-4/zeroOne.c) | Solves 0/1 knapsack with dynamic programming using separate item, weight, and profit arrays. |
 | [zeroOne-struct.c](ADA/L-4/zeroOne-struct.c) | Solves 0/1 knapsack with dynamic programming using an array of `struct Item`. |
 
