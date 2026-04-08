@@ -108,6 +108,13 @@ Lab practicals for **Analysis and Design of Algorithms (ADA)**, **Object-Oriente
 | [InterestCalc.java](OOP/L-5/InterestCalc.java) | Defines an `Interest` interface implemented by `SimpleInterest` and `CompoundInterest` classes. |
 | [Shapes.java](OOP/L-5/Shapes.java) | Abstract `Shape` class with `Triangle`, `Rectangle`, and `Circle` subclasses that compute area. |
 
+### L-6 — Exception Handling
+
+| File | Description |
+|------|-------------|
+| [cli.java](OOP/L-6/cli.java) | Reads two command-line integers, performs division, and demonstrates `try-catch-finally` handling for invalid input and divide-by-zero. |
+| [throw_s.java](OOP/L-6/throw_s.java) | Demonstrates custom exception throwing by validating age from command-line input and reporting minor/adult status. |
+
 ### Reference Material
 
 | File | Description |
@@ -119,6 +126,8 @@ Lab practicals for **Analysis and Design of Algorithms (ADA)**, **Object-Oriente
 | File | Description |
 |------|-------------|
 | [B.java](OOP/Tut/B.java) | Demonstrates single inheritance where class `B` extends class `A` and calls both inherited and own methods. |
+| [Package.java](OOP/Tut/PkgExample/Package.java) | Imports `com.Demo` and demonstrates calling both static and instance methods from another package. |
+| [Demo.java](OOP/Tut/PkgExample/com/Demo.java) | Defines class `Demo` inside package `com` with static and non-static greeting methods for package usage demo. |
 | [Student.java](OOP/Tut/Student.java) | Demonstrates constructor overloading using default and parameterized constructors. |
 
 ---
