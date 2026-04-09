@@ -105,8 +105,10 @@ Lab practicals for **Analysis and Design of Algorithms (ADA)**, **Object-Oriente
 
 | File | Description |
 |------|-------------|
+| [Calc.java](OOP/L-5/Calc.java) | Reads two numbers and uses `myutil.Stuff` to demonstrate static and instance arithmetic methods for addition, subtraction, multiplication, and division. |
 | [InterestCalc.java](OOP/L-5/InterestCalc.java) | Defines an `Interest` interface implemented by `SimpleInterest` and `CompoundInterest` classes. |
 | [Shapes.java](OOP/L-5/Shapes.java) | Abstract `Shape` class with `Triangle`, `Rectangle`, and `Circle` subclasses that compute area. |
+| [myutil/Stuff.java](OOP/L-5/myutil/Stuff.java) | Utility class in the `myutil` package that provides arithmetic helpers through static and instance methods. |
 
 ### L-6 — Exception Handling
 
