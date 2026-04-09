@@ -23,31 +23,35 @@ class UPIPayment extends Payment {
 public class PaymentManager {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
+
         System.out.print("[]: Enter amount to pay: ");
         int amount = sc.nextInt();
-        
+
         System.out.println("\n[]: Choose Payment Method:");
         System.out.println("1]. Credit Card");
         System.out.println("2]. UPI");
         System.out.print("\n-- Enter choice (1/2): ");
 
         int choice = sc.nextInt();
-        
-        if(choice != 1 || choice != 2) {
-            System.out.println("\n[]: Invalid Choice!");
-        } else {
-            Payment payment;
 
-            if(choice == 1) {
+        Payment payment;
+
+        switch (choice) {
+            case 1:
                 payment = new CreditCardPayment();
-            } else {
-                payment = new UPIPayment();
-            }
+                break;
 
-            payment.processPayment(amount);
+            case 2:
+                payment = new UPIPayment();
+                break;
+
+            default:
+                System.out.println("\n[]: Invalid Choice!");
+                sc.close();
+                return;
         }
 
+        payment.processPayment(amount);
         sc.close();
     }
 }
