@@ -1,4 +1,4 @@
-public class throw_s {
+public class Throw_s {
 
     public static void isAdult(Integer age) throws Exception {
         if (age < 18) {

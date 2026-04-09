@@ -1,4 +1,4 @@
-public class cli {
+public class Cli {
     public static void printf(String s) {
         System.out.println(s);
     }
