@@ -21,6 +21,7 @@ class Student {
         s3 = sc.nextDouble();
 
         perc = (s1 + s2 + s3) / 3.0;
+        sc.nextLine();
     }
 
     void showStudent() {
