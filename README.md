@@ -114,14 +114,15 @@ Lab practicals for **Analysis and Design of Algorithms (ADA)**, **Object-Oriente
 
 | File | Description |
 |------|-------------|
-| [cli.java](OOP/L-6/cli.java) | Reads two command-line integers, performs division, and demonstrates `try-catch-finally` handling for invalid input and divide-by-zero. |
-| [throw_s.java](OOP/L-6/throw_s.java) | Demonstrates custom exception throwing by validating age from command-line input and reporting minor/adult status. |
+| [Cli.java](OOP/L-6/Cli.java) | Reads two command-line integers, performs division, and demonstrates `try-catch-finally` handling for invalid input and divide-by-zero. |
+| [Throw_s.java](OOP/L-6/Throw_s.java) | Demonstrates custom exception throwing by validating age from command-line input and reporting minor/adult status. |
 
 ### Reference Material
 
 | File | Description |
 |------|-------------|
 | [OOP.pdf](OOP/OOP.pdf) | Lab/reference document provided in the OOP folder. |
+| [OOP-Practicals.docx](OOP/OOP-Practicals.docx) | Additional practical/reference document provided in the OOP folder. |
 
 ### Tut — Practice Programs
 
