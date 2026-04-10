@@ -1,0 +1,205 @@
+/* ============================================
+   VVP CE Sem-4 — Custom Styles
+   Smooth animations & things Tailwind can't do
+   ============================================ */
+
+/* ---------- Smooth Scrollbar ---------- */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(148,163,184,0.25); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(148,163,184,0.45); }
+
+/* ---------- Terminal Widget ---------- */
+.terminal-cursor {
+  animation: termBlink 1s step-end infinite;
+}
+
+@keyframes termBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.term-prompt { color: #9ece6a; }
+.term-command { color: #c0caf5; }
+.term-flag { color: #bb9af7; }
+.term-file { color: #7dcfff; }
+.term-output { color: #565f89; }
+.term-success { color: #9ece6a; }
+.term-number { color: #ff9e64; }
+
+/* ---------- Global smooth transitions ---------- */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------- Highlight.js code styling ---------- */
+.code-modal-inner pre {
+  margin: 0;
+  padding: 1.25rem;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  tab-size: 4;
+  background: transparent !important;
+}
+
+.code-modal-inner code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* ---------- Navbar scroll ---------- */
+.navbar-scrolled {
+  box-shadow: 0 1px 24px rgba(0,0,0,0.06);
+}
+.dark .navbar-scrolled {
+  box-shadow: 0 1px 24px rgba(0,0,0,0.25);
+}
+
+/* ---------- Accordion animation (height calculated by JS) ---------- */
+.accordion-body {
+  overflow: hidden;
+  transition: max-height 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              opacity 0.35s ease;
+  max-height: 0;
+  opacity: 0;
+}
+
+.accordion-open .accordion-body {
+  opacity: 1;
+}
+
+.accordion-chevron {
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.accordion-open .accordion-chevron {
+  transform: rotate(180deg);
+}
+
+/* ---------- Code modal ---------- */
+#code-modal {
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              visibility 0s linear 0.35s;
+  backdrop-filter: blur(4px);
+}
+
+#code-modal.modal-visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              visibility 0s linear 0s;
+}
+
+.code-modal-inner {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+              opacity 0.3s ease;
+  opacity: 0;
+}
+
+#code-modal.modal-visible .code-modal-inner {
+  transform: scale(1) translateY(0) !important;
+  opacity: 1;
+}
+
+/* ---------- Toast ---------- */
+#copy-toast {
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              visibility 0s linear 0.35s,
+              transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+#copy-toast.toast-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              visibility 0s linear 0s,
+              transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ---------- Search clear ---------- */
+#search-clear.clear-visible {
+  display: block !important;
+}
+
+/* ---------- Subject card top gradient bar ---------- */
+.card-top-bar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subject-card-wrap:hover .card-top-bar,
+.subject-card-wrap.active .card-top-bar {
+  opacity: 1;
+}
+
+/* ---------- Staggered fade-in for dynamically rendered items ---------- */
+.stagger-item {
+  opacity: 0;
+  transform: translateY(14px);
+  animation: staggerFadeIn 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes staggerFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- View transitions ---------- */
+.view-fade-in {
+  animation: viewFade 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes viewFade {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- File item hover glow ---------- */
+.file-item {
+  transition: background 0.25s ease, transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.file-item:active {
+  transform: scale(0.99);
+}
+
+/* ---------- Subject card hover lift ---------- */
+.subject-card-wrap {
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.35s ease,
+              border-color 0.3s ease,
+              background 0.3s ease;
+}
+
+/* ---------- Theme icon rotation ---------- */
+#theme-icon {
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.theme-spinning #theme-icon {
+  transform: rotate(360deg);
+}
+
+/* ---------- Back button hover arrow ---------- */
+#back-btn i {
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+#back-btn:hover i {
+  transform: translateX(-3px);
+}
+
+/* ---------- Lab accordion hover border glow ---------- */
+.lab-accordion {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.lab-accordion.accordion-open {
+  box-shadow: 0 2px 12px rgba(99,102,241,0.06);
+}
+.dark .lab-accordion.accordion-open {
+  box-shadow: 0 2px 12px rgba(99,102,241,0.08);
+}
